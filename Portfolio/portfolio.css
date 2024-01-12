@@ -494,17 +494,35 @@ header.sticky .nav-bar{
     margin: 0 auto;
 }
 
-.skills-info h4{
+.skills-info-1{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    margin: 0 auto;
+}
+.skills-info h4, .skills-info-1 h4{
     margin-bottom: 20px;
 }
 
-.skills-info h4 label{
+.skills-info h4 label, .skills-info-1 h4 label{
     background: var(--second-color);
     color: #fff;
     font-size: var(--normal-font-size);
     font-weight: 400;
     padding: 5px 15px;
     border-radius: 5px;
+}
+
+.skills-info .education-1 h4, .skills-info-1 .education-1 h4{
+    position: relative;
+    left: 250px;
+}
+
+.skills-info .education-1 h4 label, .skills-info-1 .education-1 h4 label{
+    width: 500px;
+    padding: 5px 75px;
+    font-weight: 550;
+    font-size: 20px;
 }
 
 .education-all{
@@ -654,7 +672,7 @@ header.sticky .nav-bar{
 
 
 .international-model, .international-model-1{
-    z-index: 100;
+    z-index: 999999;
     position: fixed;
     width: 100%;
     height: 100vh;
