@@ -76,6 +76,7 @@ body{
     background: var(--body-bg-color);
     margin: 2rem 0 0 0;
     transition: .5s ease;
+    overflow-x: hidden;
 }
 
 a{
@@ -344,6 +345,10 @@ header.sticky .nav-bar{
     opacity: .1;
 }
 
+#competitions{
+    padding-top: 80px;
+}
+
 .section-title-011{
     font-size: 4.5em;
     font-weight: 800;
@@ -561,7 +566,7 @@ header.sticky .nav-bar{
     margin-bottom: 80px;
 }
 
-.edu-list .item{
+.edu-list .item,.edu-list-1 .item{
     background: var(--card-bg-color);
     box-shadow: var(--box-shadow);
     border-bottom: 3px solid var(--second-color);
@@ -714,6 +719,52 @@ header.sticky .nav-bar{
     overflow: hidden;
   }
 
+.container .content .achievement-list .achievements-container{
+display: none;
+}
+
+.container .content .project-list .project-card-container{
+    display: none;
+}
+
+.container .content .achievement-list .achievements-container:nth-child(1),
+.container .content .achievement-list .achievements-container:nth-child(2),
+.container .content .achievement-list .achievements-container:nth-child(3),
+.container .content .achievement-list .achievements-container:nth-child(4){
+    display: inline-block;
+}
+
+.container .content .project-list .project-card-container:nth-child(1),
+.container .content .project-list .project-card-container:nth-child(2),
+.container .content .project-list .project-card-container:nth-child(3){
+    display: inline-block;
+}
+
+#load-more, #load-less,#load-more-1, #load-less-1{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 13px 30px;
+    border: 1px solid #334;
+    color: #334;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#load-more:hover, #load-less:hover,#load-more-1:hover, #load-less-1:hover{
+    background-color: crimson;
+    border-color: crimson;
+    color: #fff;
+}
+
+#load-less,#load-less-1{
+    display: none;
+}
+
+#load-less a,#load-less-1 a{
+    text-decoration: none;
+    color: #000;
+}
 .achievements .container .content{
     width: 100%;
 
@@ -784,7 +835,7 @@ header.sticky .nav-bar{
     z-index: 999999;
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     top: 0;
     left: 0;
     background: var(--bg-transparent-color);
@@ -800,7 +851,7 @@ header.sticky .nav-bar{
     max-width: 700px;
     margin: 10px;
     padding: 40px;
-    height: 100%;
+    height: 60%;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
 }
@@ -1166,7 +1217,7 @@ footer a{
     margin-top: 50px;
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 900px) {
 
     body{
         width: 100%;
@@ -1299,6 +1350,11 @@ footer a{
     .achievement-modal-body, .project-modal-body{
         width: 100%;
         height: 100%;
+    }
+
+    .education-1{
+        position: relative;
+        max-width: 400px;
     }
 
     .project-modal-body img{
