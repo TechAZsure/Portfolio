@@ -566,7 +566,7 @@ header.sticky .nav-bar{
     margin-bottom: 80px;
 }
 
-.edu-list .item,.edu-list-1 .item{
+.edu-list .item{
     background: var(--card-bg-color);
     box-shadow: var(--box-shadow);
     border-bottom: 3px solid var(--second-color);
